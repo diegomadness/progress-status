@@ -41,6 +41,8 @@ The field “expected_progress” contains the ideal progress percentage that is
 been achieved at the time of the request.
 #### Definition of result field “needed_daily_learning_time”
 Daily learning time needed to achieve the goal.
+The approach I took to this field is basically "If you still have the energy to study more today(if there is also enough time, 
+API ensures that) then this is how much time you need to spend learning every day starting today" 
 
 ## Installation
 wip
