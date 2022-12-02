@@ -50,6 +50,8 @@ API ensures that) then this is how much time you need to spend learning every da
 3. Head to `/api/progress?course_duration=1000&current_progress=20&creation_date=2022-12-01T00:00:00%2B02:00&due_date=2022-12-11T00:00:00%2B02:00` 
 to try the API
 
+Test with `php artisan test` command
+
 ## Edge cases
 - API won't ask you to study 4 hours today at 22:00
 - API wil auto-overdue the request if needed_daily_learning_time is greater than 24h
