@@ -44,5 +44,19 @@ Daily learning time needed to achieve the goal.
 The approach I took to this field is basically "If you still have the energy to study more today(if there is also enough time, 
 API ensures that) then this is how much time you need to spend learning every day starting today" 
 
-## Installation
-wip
+## Installation and usage
+1. composer install
+2. rename .env.example to .env
+3. Head to /api/progress?course_duration=1000&current_progress=20&creation_date=2022-12-01T00:00:00%2B02:00&due_date=2022-12-11T00:00:00%2B02:00 
+to try the API
+
+## Edge cases
+- API won't ask you to study 4 hours today at 22:00
+- API wil auto-overdue the request if needed_daily_learning_time is greater than 24h
+
+## Additional notes
+- Use "%2" instead of "+" in request URLs
+- The app uses Europe/Sofia timezone, please use dates with '%202:00' timezone.
+
+
+
